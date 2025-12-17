@@ -1,0 +1,98 @@
+/* style.css - Interview news report styling */
+
+:root{
+  --bg: #ffffff;
+  --text: #111827;      /* near-black */
+  --muted: #4b5563;     /* gray */
+  --border: #e5e7eb;    /* light gray */
+  --accent: #2563eb;    /* blue */
+  --quote: #0f172a;     /* deep slate */
+}
+
+*{ box-sizing: border-box; }
+
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+}
+
+article{
+  max-width: 920px;
+  margin: 24px auto;
+  padding: 0 18px 32px;
+}
+
+header{
+  margin-bottom: 14px;
+}
+
+h1{
+  line-height: 1.2;
+  margin: 0 0 10px 0;
+  font-size: 1.9rem;
+}
+
+.meta{
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.lead{
+  font-size: 1.05rem;
+  margin-top: 14px;
+}
+
+hr{
+  margin: 18px 0;
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+
+section{
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+section:last-of-type{
+  border-bottom: 0;
+}
+
+h2{
+  margin: 0 0 10px 0;
+  font-size: 1.25rem;
+  color: var(--text);
+}
+
+p{
+  margin: 8px 0;
+}
+
+ul{
+  margin: 8px 0 0 18px;
+  padding: 0;
+}
+
+li{
+  margin: 8px 0;
+}
+
+strong{
+  color: var(--quote);
+}
+
+blockquote{
+  border-left: 4px solid var(--accent);
+  margin: 16px 0;
+  padding: 10px 14px;
+  background: #f8fafc;
+  color: var(--quote);
+}
+
+@media (max-width: 520px){
+  h1{ font-size: 1.55rem; }
+  article{ margin: 16px auto; }
+}
